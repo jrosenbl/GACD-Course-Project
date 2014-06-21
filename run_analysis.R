@@ -1,10 +1,14 @@
+#
+# script: run_analysis.R
+# data sets:  http://bit.ly/1p1sdWC
+#
 # start with a clean workspace
 rm(list=ls())
 
 PROJECT_DIR = '~/documents/Learning/Coursera/Getting and Cleaning Data/GACD-Course-Project/UCI HAR Dataset'
 FEATURES_FILE = 'features.txt'
 ACTIVITY_LABELS_FILE = 'activity_labels.txt'
-TIDY_DATA_FILE = 'avgs-by-subject-activity-2.txt'
+TIDY_DATA_FILE = 'avgs-by-subject-activity.txt'
 
 get_set = function(set) {
   #  This function takes advantage of the common naming convention used for both the test and training data
