@@ -18,71 +18,81 @@ Each of the 66 subset feature variables names is also prepended with the letter 
 
 
 The following variables are included in the final "tidy data set" 
-> subject
-> activity
-> atBodyAcc.mean.X
-> atBodyAcc.mean.Y
-> atBodyAcc.mean.Z
-> atBodyAcc.std.X
-> atBodyAcc.std.Y
-> atBodyAcc.std.Z
-> atGravityAcc.mean.X
-> atGravityAcc.mean.Y
-> atGravityAcc.mean.Z
-> atGravityAcc.std.X
-> atGravityAcc.std.Y
-> atGravityAcc.std.Z
-> atBodyAccJerk.mean.X
-> atBodyAccJerk.mean.Y
-> atBodyAccJerk.mean.Z
-> atBodyAccJerk.std.X
-> atBodyAccJerk.std.Y
-> atBodyAccJerk.std.Z
-> atBodyGyro.mean.X
-> atBodyGyro.mean.Y
-> atBodyGyro.mean.Z
-> atBodyGyro.std.X
-> atBodyGyro.std.Y
-> atBodyGyro.std.Z
-> atBodyGyroJerk.mean.X
-> atBodyGyroJerk.mean.Y
-> atBodyGyroJerk.mean.Z
-> atBodyGyroJerk.std.X
-> atBodyGyroJerk.std.Y
-> atBodyGyroJerk.std.Z
-> atBodyAccMag.mean
-> atBodyAccMag.std
-> atGravityAccMag.mean
-> atGravityAccMag.std
-> atBodyAccJerkMag.mean
-> atBodyAccJerkMag.std
-> atBodyGyroMag.mean
-> atBodyGyroMag.std
-> atBodyGyroJerkMag.mean
-> atBodyGyroJerkMag.std
-> afBodyAcc.mean.X
-> afBodyAcc.mean.Y
-> afBodyAcc.mean.Z
-> afBodyAcc.std.X
-> afBodyAcc.std.Y
-> afBodyAcc.std.Z
-> afBodyAccJerk.mean.X
-> afBodyAccJerk.mean.Y
-> afBodyAccJerk.mean.Z
-> afBodyAccJerk.std.X
-> afBodyAccJerk.std.Y
-> afBodyAccJerk.std.Z
-> afBodyGyro.mean.X
-> afBodyGyro.mean.Y
-> afBodyGyro.mean.Z
-> afBodyGyro.std.X
-> afBodyGyro.std.Y
-> afBodyGyro.std.Z
-> afBodyAccMag.mean
-> afBodyAccMag.std
-> afBodyBodyAccJerkMag.mean
-> afBodyBodyAccJerkMag.std
-> afBodyBodyGyroMag.mean
-> afBodyBodyGyroMag.std
-> afBodyBodyGyroJerkMag.mean
-> afBodyBodyGyroJerkMag.std
+subject
+
+activity
+
+atBodyAcc.mean.X
+
+atBodyAcc.mean.Y
+
+atBodyAcc.mean.Z
+
+atBodyAcc.std.X
+
+atBodyAcc.std.Y
+
+atBodyAcc.std.Z
+
+atGravityAcc.mean.X
+
+atGravityAcc.mean.Y
+
+atGravityAcc.mean.Z
+atGravityAcc.std.X
+atGravityAcc.std.Y
+atGravityAcc.std.Z
+atBodyAccJerk.mean.X
+atBodyAccJerk.mean.Y
+atBodyAccJerk.mean.Z
+atBodyAccJerk.std.X
+atBodyAccJerk.std.Y
+atBodyAccJerk.std.Z
+atBodyGyro.mean.X
+atBodyGyro.mean.Y
+atBodyGyro.mean.Z
+atBodyGyro.std.X
+atBodyGyro.std.Y
+atBodyGyro.std.Z
+atBodyGyroJerk.mean.X
+atBodyGyroJerk.mean.Y
+atBodyGyroJerk.mean.Z
+atBodyGyroJerk.std.X
+atBodyGyroJerk.std.Y
+atBodyGyroJerk.std.Z
+atBodyAccMag.mean
+atBodyAccMag.std
+atGravityAccMag.mean
+atGravityAccMag.std
+atBodyAccJerkMag.mean
+atBodyAccJerkMag.std
+atBodyGyroMag.mean
+atBodyGyroMag.std
+atBodyGyroJerkMag.mean
+atBodyGyroJerkMag.std
+afBodyAcc.mean.X
+afBodyAcc.mean.Y
+afBodyAcc.mean.Z
+afBodyAcc.std.X
+afBodyAcc.std.Y
+afBodyAcc.std.Z
+afBodyAccJerk.mean.X
+afBodyAccJerk.mean.Y
+afBodyAccJerk.mean.Z
+afBodyAccJerk.std.X
+afBodyAccJerk.std.Y
+afBodyAccJerk.std.Z
+afBodyGyro.mean.X
+afBodyGyro.mean.Y
+afBodyGyro.mean.Z
+afBodyGyro.std.X
+afBodyGyro.std.Y
+afBodyGyro.std.Z
+afBodyAccMag.mean
+afBodyAccMag.std
+afBodyBodyAccJerkMag.mean
+afBodyBodyAccJerkMag.std
+afBodyBodyGyroMag.mean
+afBodyBodyGyroMag.std
+afBodyBodyGyroJerkMag.mean
+afBodyBodyGyroJerkMag.std
