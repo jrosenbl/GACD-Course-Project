@@ -34,7 +34,7 @@ The resulting names are used as column names in the tidy data set.
 Here's an example of a feature name before and after the 3 transformations described above
 
 |       before      |       after      |
-----------------------------------------
+--------------------|-------------------
 | tBodyAcc-mean()-X | atBodyAcc.mean.X |
 
 
