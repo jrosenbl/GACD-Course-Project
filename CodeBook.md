@@ -29,9 +29,9 @@ feature variable names have been edited to be valid R variable names with the
 following substitions:
   * "-" is replaced with "."
   * "()" is deleted
-Each of the 66 subset feature variables names is also prepended with the letter
-"a" to indicate that the values represent averages.  The resulting names are
-used as column names in the tidy data set.
+  * Each of the 66 subset feature variables names is also prepended with the letter
+"a" to indicate that the values represent averages.  
+The resulting names are used as column names in the tidy data set.
 
 Here's an example of a feature name before and after the 3 transformations described above
 
@@ -48,7 +48,7 @@ The following variables are included in the final "tidy data set"
 
 * activity
 
-    factor with levels defined in the file "activity_labels.txt":
+    factor with levels defined in the file "activity_labels.txt" included with the source data set:
 
     * WALKING
     * WALKING_UPSTAIRS
