@@ -43,16 +43,19 @@ Here's an example of a feature name before and after the 3 transformations descr
 The following variables are included in the final "tidy data set" 
 
 * subject 
+
     integer from 1 to 30
 
 * activity
+
     factor with levels defined in the file "activity_labels.txt":
-    ** 1 WALKING
-    ** 2 WALKING_UPSTAIRS
-    ** 3 WALKING_DOWNSTAIRS
-    ** 4 SITTING
-    ** 5 STANDING
-    ** 6 LAYING
+
+    * 1 WALKING
+    * 2 WALKING_UPSTAIRS
+    * 3 WALKING_DOWNSTAIRS
+    * 4 SITTING
+    * 5 STANDING
+    * 6 LAYING
     
 The following numeric values are averages of the corresponding variable from the source data set    
 
