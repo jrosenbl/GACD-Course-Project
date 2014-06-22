@@ -31,6 +31,7 @@ following substitions:
   * "()" is deleted
   * Each of the 66 subset feature variables names is also prepended with the letter
 "a" to indicate that the values represent averages.  
+
 The resulting names are used as column names in the tidy data set.
 
 Here's an example of a feature name before and after the 3 transformations described above
