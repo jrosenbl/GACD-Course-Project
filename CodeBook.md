@@ -4,18 +4,38 @@ Code Book
     
 "run_analysis.R" was written for course project of the June 2014 offering of the Coursera/JHU course "Getting and Cleaning Data".
 
-The original source data processed by this script is described in the README.txt file that accompanies the 
-[data set](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).  As described 
-in this readme file, the data is partitioned into test and training sets.  Each of these is contained in multiple 
-files which need to be merged column-wise so that each row represents the measured features for 1 subject and 
+The original source data processed by this script is described in the
+README.txt file that accompanies the [data
+set](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
+As described in this README.txt file, the data is partitioned into test and
+training sets.  Each of these comprises multiple files that can be merged
+column-wise so that each row represents a subset of the measured and computed
+values for one experiment subject and one activity and the complete set of
+values for one subject and activity spans multiple rows.
 
-The 2 sets are then combined into one long and wide data set.  The script then groups the observations by subject and activity and summarizes the group by calculating averages for only the mean and standard deviation variables.  This subset, comprised of subject, activity and averages of 66 feature variables is written to a file.
+The run_analysis.R script first performs the column-wise merging for each of
+the 2 data sets test and train and then combines them row-wise into one long
+and wide data set.  The script then groups the observations by subject and
+activity and summarizes the group by calculating averages for only the mean and
+standard deviation variables.  This produces a tidy data set with a complete
+set of values (66 feature variables) for a given subject and activity.  The
+script writes the tidy data set to a text file "avgs-by-subject-activity.txt".
 
-The 66 feature variables are a subset of those listed in "features.txt" and described in "features_info.txt" included with the UCS HAR Datasets.  The feature variable names have been edited to be valid R variable names with the following substitions:
+The 66 feature variables are a subset of those listed in the "features.txt" file 
+and described in "features_info.txt" included with the UCS HAR Datasets.  The
+feature variable names have been edited to be valid R variable names with the
+following substitions:
   * "-" is replaced with "."
   * "()" is deleted
+Each of the 66 subset feature variables names is also prepended with the letter
+"a" to indicate that the values represent averages.
+The resulting names are used as column names in the tidy data set.
 
-Each of the 66 subset feature variables names is also prepended with the letter "a" to indicate that the values represent averages.
+Here's an example of a feature name before and after the 3 transformations described above
+
+|       before      |       after      |
+----------------------------------------
+| tBodyAcc-mean()-X | atBodyAcc.mean.X |
 
 
 The following variables are included in the final "tidy data set" 
