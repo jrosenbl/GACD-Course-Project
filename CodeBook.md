@@ -50,78 +50,81 @@ The following variables are included in the final "tidy data set"
 
     factor with levels defined in the file "activity_labels.txt":
 
-    * 1 WALKING
-    * 2 WALKING_UPSTAIRS
-    * 3 WALKING_DOWNSTAIRS
-    * 4 SITTING
-    * 5 STANDING
-    * 6 LAYING
+    * WALKING
+    * WALKING_UPSTAIRS
+    * WALKING_DOWNSTAIRS
+    * SITTING
+    * STANDING
+    * LAYING
     
 The following numeric values are averages of the corresponding variable from the source data set    
 
-* atBodyAcc.mean.X
-* atBodyAcc.mean.Y
-* atBodyAcc.mean.Z
-* atBodyAcc.std.X
-* atBodyAcc.std.Y
-* atBodyAcc.std.Z
-* atGravityAcc.mean.X
-* atGravityAcc.mean.Y
-* atGravityAcc.mean.Z
-* atGravityAcc.std.X
-* atGravityAcc.std.Y
-* atGravityAcc.std.Z
-* atBodyAccJerk.mean.X
-* atBodyAccJerk.mean.Y
-* atBodyAccJerk.mean.Z
-* atBodyAccJerk.std.X
-* atBodyAccJerk.std.Y
-* atBodyAccJerk.std.Z
-* atBodyGyro.mean.X
-* atBodyGyro.mean.Y
-* atBodyGyro.mean.Z
-* atBodyGyro.std.X
-* atBodyGyro.std.Y
-* atBodyGyro.std.Z
-* atBodyGyroJerk.mean.X
-* atBodyGyroJerk.mean.Y
-* atBodyGyroJerk.mean.Z
-* atBodyGyroJerk.std.X
-* atBodyGyroJerk.std.Y
-* atBodyGyroJerk.std.Z
-* atBodyAccMag.mean
-* atBodyAccMag.std
-* atGravityAccMag.mean
-* atGravityAccMag.std
-* atBodyAccJerkMag.mean
-* atBodyAccJerkMag.std
-* atBodyGyroMag.mean
-* atBodyGyroMag.std
-* atBodyGyroJerkMag.mean
-* atBodyGyroJerkMag.std
-* afBodyAcc.mean.X
-* afBodyAcc.mean.Y
-* afBodyAcc.mean.Z
-* afBodyAcc.std.X
-* afBodyAcc.std.Y
-* afBodyAcc.std.Z
-* afBodyAccJerk.mean.X
-* afBodyAccJerk.mean.Y
-* afBodyAccJerk.mean.Z
-* afBodyAccJerk.std.X
-* afBodyAccJerk.std.Y
-* afBodyAccJerk.std.Z
-* afBodyGyro.mean.X
-* afBodyGyro.mean.Y
-* afBodyGyro.mean.Z
-* afBodyGyro.std.X
-* afBodyGyro.std.Y
-* afBodyGyro.std.Z
-* afBodyAccMag.mean
-* afBodyAccMag.std
-* afBodyBodyAccJerkMag.mean
-* afBodyBodyAccJerkMag.std
-* afBodyBodyGyroMag.mean
-* afBodyBodyGyroMag.std
-* afBodyBodyGyroJerkMag.mean
-* afBodyBodyGyroJerkMag.std
+|tidy names                 |source variable name        |
+|:--------------------------|:---------------------------|
+|atBodyAcc.mean.X           |tBodyAcc-mean()-X           |
+|atBodyAcc.mean.Y           |tBodyAcc-mean()-Y           |
+|atBodyAcc.mean.Z           |tBodyAcc-mean()-Z           |
+|atBodyAcc.std.X            |tBodyAcc-std()-X            |
+|atBodyAcc.std.Y            |tBodyAcc-std()-Y            |
+|atBodyAcc.std.Z            |tBodyAcc-std()-Z            |
+|atGravityAcc.mean.X        |tGravityAcc-mean()-X        |
+|atGravityAcc.mean.Y        |tGravityAcc-mean()-Y        |
+|atGravityAcc.mean.Z        |tGravityAcc-mean()-Z        |
+|atGravityAcc.std.X         |tGravityAcc-std()-X         |
+|atGravityAcc.std.Y         |tGravityAcc-std()-Y         |
+|atGravityAcc.std.Z         |tGravityAcc-std()-Z         |
+|atBodyAccJerk.mean.X       |tBodyAccJerk-mean()-X       |
+|atBodyAccJerk.mean.Y       |tBodyAccJerk-mean()-Y       |
+|atBodyAccJerk.mean.Z       |tBodyAccJerk-mean()-Z       |
+|atBodyAccJerk.std.X        |tBodyAccJerk-std()-X        |
+|atBodyAccJerk.std.Y        |tBodyAccJerk-std()-Y        |
+|atBodyAccJerk.std.Z        |tBodyAccJerk-std()-Z        |
+|atBodyGyro.mean.X          |tBodyGyro-mean()-X          |
+|atBodyGyro.mean.Y          |tBodyGyro-mean()-Y          |
+|atBodyGyro.mean.Z          |tBodyGyro-mean()-Z          |
+|atBodyGyro.std.X           |tBodyGyro-std()-X           |
+|atBodyGyro.std.Y           |tBodyGyro-std()-Y           |
+|atBodyGyro.std.Z           |tBodyGyro-std()-Z           |
+|atBodyGyroJerk.mean.X      |tBodyGyroJerk-mean()-X      |
+|atBodyGyroJerk.mean.Y      |tBodyGyroJerk-mean()-Y      |
+|atBodyGyroJerk.mean.Z      |tBodyGyroJerk-mean()-Z      |
+|atBodyGyroJerk.std.X       |tBodyGyroJerk-std()-X       |
+|atBodyGyroJerk.std.Y       |tBodyGyroJerk-std()-Y       |
+|atBodyGyroJerk.std.Z       |tBodyGyroJerk-std()-Z       |
+|atBodyAccMag.mean          |tBodyAccMag-mean()          |
+|atBodyAccMag.std           |tBodyAccMag-std()           |
+|atGravityAccMag.mean       |tGravityAccMag-mean()       |
+|atGravityAccMag.std        |tGravityAccMag-std()        |
+|atBodyAccJerkMag.mean      |tBodyAccJerkMag-mean()      |
+|atBodyAccJerkMag.std       |tBodyAccJerkMag-std()       |
+|atBodyGyroMag.mean         |tBodyGyroMag-mean()         |
+|atBodyGyroMag.std          |tBodyGyroMag-std()          |
+|atBodyGyroJerkMag.mean     |tBodyGyroJerkMag-mean()     |
+|atBodyGyroJerkMag.std      |tBodyGyroJerkMag-std()      |
+|afBodyAcc.mean.X           |fBodyAcc-mean()-X           |
+|afBodyAcc.mean.Y           |fBodyAcc-mean()-Y           |
+|afBodyAcc.mean.Z           |fBodyAcc-mean()-Z           |
+|afBodyAcc.std.X            |fBodyAcc-std()-X            |
+|afBodyAcc.std.Y            |fBodyAcc-std()-Y            |
+|afBodyAcc.std.Z            |fBodyAcc-std()-Z            |
+|afBodyAccJerk.mean.X       |fBodyAccJerk-mean()-X       |
+|afBodyAccJerk.mean.Y       |fBodyAccJerk-mean()-Y       |
+|afBodyAccJerk.mean.Z       |fBodyAccJerk-mean()-Z       |
+|afBodyAccJerk.std.X        |fBodyAccJerk-std()-X        |
+|afBodyAccJerk.std.Y        |fBodyAccJerk-std()-Y        |
+|afBodyAccJerk.std.Z        |fBodyAccJerk-std()-Z        |
+|afBodyGyro.mean.X          |fBodyGyro-mean()-X          |
+|afBodyGyro.mean.Y          |fBodyGyro-mean()-Y          |
+|afBodyGyro.mean.Z          |fBodyGyro-mean()-Z          |
+|afBodyGyro.std.X           |fBodyGyro-std()-X           |
+|afBodyGyro.std.Y           |fBodyGyro-std()-Y           |
+|afBodyGyro.std.Z           |fBodyGyro-std()-Z           |
+|afBodyAccMag.mean          |fBodyAccMag-mean()          |
+|afBodyAccMag.std           |fBodyAccMag-std()           |
+|afBodyBodyAccJerkMag.mean  |fBodyBodyAccJerkMag-mean()  |
+|afBodyBodyAccJerkMag.std   |fBodyBodyAccJerkMag-std()   |
+|afBodyBodyGyroMag.mean     |fBodyBodyGyroMag-mean()     |
+|afBodyBodyGyroMag.std      |fBodyBodyGyroMag-std()      |
+|afBodyBodyGyroJerkMag.mean |fBodyBodyGyroJerkMag-mean() |
+|afBodyBodyGyroJerkMag.std  |fBodyBodyGyroJerkMag-std()  |
+
